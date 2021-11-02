@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 21px;
+    font-weight: normal;
+    padding: 20px 150px;
+    background-color: #BF826B;
+}
+h1{
+  text-align: center;
+  margin-top:30px;
+  margin-bottom:30px;
+
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.topnav{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom:30px;
+}
+
+nav {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+    ul {
+        display: flex;
+    }
+    li {
+        margin: 0 10px;
+    }
+
+        svg {
+            width: 20px;
+            height: auto;
+        }
+
+
+        svg {
+            width: 60px;
+            height:40px;
+        }
+
+
+
+.Art1 {
+    background-image:url("Pear.jpg");
+    /* i took this pic */
+    height: 320px;
+    width: 280px;
+    margin: 5px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.s-1 {
+    border:1px solid black;
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65%;
+    right: -23px;
+    display: none;
+}
+
+
+
+.Art1:hover{
+    opacity: 65%;
+}
+.Art1:hover > .s-1{
+    display: block;
+}
+
+.Art2 {
+    background-image: url("Papaya.jpg");
+    /* i took this pic */
+    height: 320px;
+    width: 280px;
+    margin: 5px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.s-2 {
+    border:1px solid black;
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65%;
+    right: -23px;
+    display: none;
+}
+
+
+
+.Art2:hover{
+    opacity: 65%;
+}
+.Art2:hover > .s-2{
+    display: block;
+}
+
+.Art3 {
+    background-image: url("Cherry.jpg");
+    /* i took this pic */
+    height: 320px;
+    width: 280px;
+    margin: 5px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.s-3 {
+    border:1px solid black;
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65%;
+    right: -23px;
+    display: none;
+}
+
+
+
+.Art3:hover{
+    opacity: 65%;
+}
+.Art3:hover > .s-3{
+    display: block;
+}
+
+
+.Art4{
+    background-image: url("Mango.jpg");
+    /* i took this pic */
+    height: 320px;
+    width: 270px;
+    margin: 5px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.s-4 {
+    border:1px solid black;
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65%;
+    right: -23px;
+    display: none;
+}
+
+
+
+.Art4:hover{
+    opacity: 65%;
+}
+.Art4:hover > .s-4{
+    display: block;
+}
+
+
+.sneakers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+/* START MOBILE FORM STYLES */
+    .form-container{
+/*       TO CENTER add AUTO for margin right and left*/
+      margin: 20px auto;
+/*  WIDTH 100%  FOR MOBILE DEVICES*/
+      width:90%;
+      display:block;
+      font-size:1em;
+    }
+    form p{
+      margin-bottom:5px;
+
+    }
+    label{
+      display:block;
+    }
+    #newsletter input{
+      display:inline;
+      width:auto;
+    }
+    input{
+      /* FOR MOBILE use WIDTH:100% */
+      width:100%;
+      padding:1.7%;
+      margin:1.5% 0;
+      font-size: 1em;
+      border-radius: 4px;
+      border:1px solid #ccc;
+      box-sizing: border-box;
+    }
+    textarea{
+      min-height:100px;
+       /* FOR MOBILE use WIDTH:100% */
+      width: 100%;
+      padding: 2%;
+      margin: 1.5% 0;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button{
+      /* CHANGED COLORS bellow */
+      background: #45A99F;
+      border: 1px solid #45A99F;
+      /* Rounded corners */
+      border-radius: 4px;
+      /* Text color */
+      color:white;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding:10px 20px;
+      font-size: 1.1em;
+    }
+  /*        END MOBILE FORM STYLES */
+
+    @media only screen and (min-width: 480px) {
+      .sneakers{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:100%;
+      }
+      .Art1{
+        width: 250px;
+      }
+      .Art2{
+        width: 250px;
+      }
+      .Art3{
+        width: 250px;
+      }
+      .Art4{
+        width: 250px;
+      }
+ /*         START DESKTOP FORM STYLES */
+      .form-container{
+ /*         CHANGE WIDTH of FORM TO YOUR PREFERENCE */
+        width:50%;
+      }
+      input{
+         /* CHANGE WIDTH TO YOUR PREFERENCE */
+        width:60%;
+      }
+      button{
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+    }
